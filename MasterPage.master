@@ -1,0 +1,66 @@
+﻿<%@ master language="C#" autoeventwireup="true" inherits="MasterPage, App_Web_miccv0mn" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <link rel="stylesheet" type="text/css" href="default.css" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div>
+            <div id="upbg">
+            </div>
+            <div id="outer">
+                <div id="headerpic">
+                    <div id="headercontent">
+                        <h1>
+                            MY - GYM <sup>IT</sup></h1>
+                        <h2>
+                            designed by Eng Haitham</h2>
+                    </div>
+                </div>
+                <div id="menu">
+                    <!-- HINT: Set the class of any menu link below to "active" to make it appear active -->
+                    <ul>
+                        <li><a id="aAttend" runat="server" href="Attend.aspx">Attend</a></li>
+                        <li><a id="aPriceList" runat="server" href="PriceList.aspx">Price List</a></li>
+                        <li><a id="aTraineeView" runat="server" href="TraineeView.aspx">Trainee</a></li>
+                        <li><a id="aAttendance" runat="server" href="Attendance.aspx">Attendance Report</a></li>
+                        <li><a id="aTraineeAttendance" runat="server" href="TraineeAttendance.aspx">Trainee Attendance </a></li>
+                        <li><a id="aReservations" runat="server" href="Reservations.aspx">Reservation</a></li>
+                        <li><a id="aRenew" runat="server" href="Renew.aspx">Renew </a></li>
+                        <li><a id="aReport" runat="server" href="Report.aspx">Report</a></li>
+                        <li><a id="aUsers" runat="server" href="UsersP.aspx">Users</a></li>
+                        <li>
+                            <asp:LinkButton ID="lin1" runat="server" Text="LogOut" OnClick="LinkButton_Click"></asp:LinkButton></li>
+                    </ul>
+                </div>
+                <div id="menubottom">
+                </div>
+                <div id="content">
+                    <div id="normalcontent">
+                        <div class="contentarea">
+                            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                </div>
+                <div id="footer">
+                    <div class="left">
+                        © 2012 GymApps. All rights reserved.</div>
+                    <div class="right">
+                        Design by En Haitham
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

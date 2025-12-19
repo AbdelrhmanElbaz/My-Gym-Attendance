@@ -1,0 +1,19 @@
+# ملفات Visual Studio
+*.suo
+*.user
+*.userosscache
+
+# ملفات البناء
+[Bb]in/
+[Oo]bj/
+[Dd]ebug/
+[Rr]elease/
+
+# SQL
+*.mdf
+*.ldf
+
+# صور وفيديو
+*.jpg
+*.png
+*.wav
